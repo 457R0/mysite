@@ -1,2 +1,2 @@
-# mysite
-This is my portfolio
+#Welcome
+This is my site, I keep notes and tips here too!
