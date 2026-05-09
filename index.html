@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+</head>
+<body>
+	<div id="dvFlash" class="dv-flash" aria-hidden="true"></div>
+	<button class="mode-toggle" id="modeToggle">
+    <span id="modeLabel">SAPOTAMA MODE</span>
+  </button>
+	<div id="websiteView">
+    <header class="site-header">
+      <div class="site-header-inner">
+        <div class="site-logo">PORTFOLIO.exe</div>
+        <nav class="site-nav">
+        	<a href="#site-about" class="site-nav-link">About</a>
+        	<a href="#site-skills" class="site-nav-link">Skills</a>
+			<a href="#site-projects" class="site-nav-link">Projects</a>
+			<a href="#site-contact" class="site-nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main> 
+		<section class="site-hero">
+        <div class="site-hero-inner">
+          <div class="site-hero-text">
+            <h1 class="site-hero-name">Taveon Nelson</h1>
+            <p class="site-hero-role">Full-Stack Developer</p>
+          </div>
+        </div>
+      </section>
+		<section class="site-section" id="site-about">
+        <div class="site-section-inner">
+          <h2 class="site-section-title">
+            <span class="bracket">[</span> About <span class="bracket">]</span>
+          </h2>
+          <p class="site-body-text">
+            A Full-stack web developer focused on building scalable,
+            user-friendly applications across both frontend and backend systems.
+            Experienced in designing efficient architectures, creating responsive interfaces,
+            and delivering reliable, maintainable solutions.
+          </p>
+          </div>
+      </section>
+		<section class="site-section" id="site-skills">
+        <div class="site-section-inner">
+          <h2 class="site-section-title">
+            <span class="bracket">[</span> Skills <span class="bracket">]</span>
+          </h2>
+          <ul class="site-body-text">
+       <li>HTML</li>
+       <li>CSS</li>
+       <li>Javascript</li>
+       <li>Kotlin</li>
+     </ul>
+        </div>
+      </section>
+		<section class="site-section site-section--alt" id="site-projects">
+      <div class="site-section-inner">
+      <h2 class="site-section-title">
+        <span class="bracket">[</span> Projects <span class="bracket">]</span>
+      </h2>
+      <p class="site-body-text">List of projects:</p>
+      <div class="site-project-list">
+        <article class="site-project-item">
+        <h3><a href="https://457r0.github.io/Business-Template/">Business Website</a></h3>
+        <img class="bizsite" src="assets/business.png" alt="Business website template preview">
+        <ul>
+          <li>Mock website designed to be used as a future template.</li>
+        </ul>
+        </article>
+        <article class="site-project-item">
+        <h3><a href="https://457r0.github.io/Web-Dev-Notebook/">Web Dev Notebook</a></h3>
+        <img class="wdnotebook" src="assets/WDNResult.png" alt="Web Dev Notebook preview">
+        <ul>
+          <li>Created to help reinforce my learning.</li>
+          <li>Constantly updated by yours truly, check back often!</li>
+        </ul>
+        </article>
+        <article class="site-project-item">
+        <h3><a href="https://457r0.github.io/Investment-Template/">AI Investment Tracker</a></h3>
+        <img class="aiinvest" src="assets/AIINVEST.png" alt="AI investment tracker preview">
+        <ul>
+          <li>Created a reusable template that showcases the ability to add AI features to a website.</li>
+        </ul>
+        </article>
+        <article class="site-project-item">
+        <h3><a href="https://github.com/457R0/VitalWear/releases">Vitalwear</a></h3>
+        <img class="vitalwear" src="assets/Vitalwear.png" alt="Vitalwear watch preview">
+        <ul>Contributed by:
+          <li>Updated UI to implement fullscreen background.</li>
+          <li>Unified databases between Vitalwear and VBHelper.</li>
+          <li>Added a transfer button and enhanced the NFCA transfer system to include HCE/ISO-DEP.</li>
+        </ul>
+        </article>
+      </div>
+      </div>
+	</section>
+		<section class="site-section site-section--alt" id="site-contact">
+        <div class="site-section-inner">
+          <h2 class="site-section-title">
+            <span class="bracket">[</span> Comm Link <span class="bracket">]</span>
+          </h2>
+          <p class="site-body-text">Reach me here:</p>
+          <div class="site-contact-list">
+            <a href="mailto:taveonnelson@proton.me" class="site-contact-item">
+              <span class="site-contact-icon">&#9993;</span>
+              <span>taveonnelson@proton.me</span>
+            </a>
+            <a href="https://github.com/457R0" target="_blank" rel="noopener" class="site-contact-item">
+              <span class="site-contact-icon">&#128279;</span>
+              <span>github.com/457R0</span>
+            </a>
+          </div>
+        </div>
+      </section>
+	</main>
+
+    <footer class="site-footer">
+      <p>&copy;<span id="year"></span> Taveon Nelson. All rights reserved.</p>
+    </footer>
+  </div>
+	<div id="sapotamaView" class="dv-page" hidden>
+
+    <div class="dv-shell">
+      <div class="dv-body">
+
+        <div class="dv-status-bar">
+          <span class="dv-time" id="dvTime">12:00</span>
+          <span class="dv-logo">Sapotama</span>
+          <div class="dv-status-icons">
+            <div class="dv-signal"><span></span><span></span><span></span></div>
+            <span class="dv-battery">100%</span>
+          </div>
+        </div>
+
+        <div class="dv-screen" id="dvScreen">
+          <div class="dv-scanlines"></div>
+          <div class="dv-vignette"></div>
+
+          <div class="dv-panel active" id="dv-panel-0">
+            <p class="dv-title blink">PORTFOLIO.EXE</p>
+            <p class="dv-subtitle">SYSTEM READY, WELCOME!</p>
+          </div>
+
+          <div class="dv-panel" id="dv-panel-1">
+            <p class="dv-panel-heading">[PROFILE:]</p>
+            <p class="dv-line"><span class="dv-key">NAME</span> Taveon Nelson</p>
+            <p class="dv-line"><span class="dv-key">CLASS</span> Full-Stack Developer</p>
+            <div class="dv-divider"></div>
+            <p class="dv-body-text">
+              A Full-stack developer building scalable, user-friendly apps across
+              frontend and backend systems.
+            </p>
+          </div>
+
+          <div class="dv-panel" id="dv-panel-2">
+            <p class="dv-panel-heading">[HOW TO CONNECT]</p>
+            <a href="mailto:taveonnelsonn@gmail.com" target="_blank" rel="noopener" class="dv-contact-row">
+              <span>✉️</span> taveonnelson@proton.me
+            </a>
+            <a href="https://github.com/457R0" target="_blank" rel="noopener" class="dv-contact-row">
+              <span>&#128279;</span> github.com/457R0
+            </a>
+          </div>
+        </div>
+
+        <div class="dv-controls">
+          <button class="dv-nav-tab" data-panel="1">ABOUT</button>
+          <button class="dv-action-btn dv-btn-home" id="homebutton">🏠</button>
+          <button class="dv-nav-tab" data-panel="2">CONTACT</button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+	<script src="script.js"></script>
+</body>
+</html>
