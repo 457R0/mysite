@@ -7,9 +7,9 @@
 
 /* --- Variables --- */
 :root {
-  --red:       #c0001a;
-  --red-dark:  #7a0010;
-  --red-light: #e8002a;
+  --blue:       #0056b3;
+  --blue-dark:  #002b5c;
+  --blue-light: #00aaff;
   --gold:      #c8a227;
   --yellow:    #ffdd00;
   --silver:    #8a8a8a;
@@ -70,8 +70,8 @@ body {
   right: 16px;
   z-index: 1000;
   padding: 8px 14px;
-  background: var(--red-dark);
-  border: 2px solid var(--red);
+  background: var(--blue-dark);
+  border: 2px solid var(--blue);
   border-radius: 6px;
   color: var(--gold);
   font-family: var(--fp);
@@ -79,12 +79,12 @@ body {
   letter-spacing: 1px;
   cursor: pointer;
   white-space: nowrap;
-  box-shadow: 0 0 12px rgba(192,0,26,0.4);
+  box-shadow: 0 0 12px rgba(0,86,179,0.4);
   transition: background 0.2s, box-shadow 0.2s, color 0.2s;
 }
 .mode-toggle:hover {
-  background: var(--red);
-  box-shadow: 0 0 20px rgba(192,0,26,0.7);
+  background: var(--blue);
+  box-shadow: 0 0 20px rgba(0,86,179,0.7);
   color: #fff;
 }
 
@@ -100,7 +100,7 @@ body {
   z-index: 100;
   background: rgba(10,0,5,0.88);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--red-dark);
+  border-bottom: 1px solid var(--blue-dark);
 }
 .site-header-inner {
   max-width: 900px;
@@ -129,12 +129,12 @@ body {
   letter-spacing: 1px;
   transition: color 0.2s, text-shadow 0.2s;
 }
-.site-nav-link:hover { color: var(--red-light); text-shadow: 0 0 8px var(--red-light); }
+.site-nav-link:hover { color: var(--blue-light); text-shadow: 0 0 8px var(--blue-light); }
 
 /* ---- Hero ---- */
 .site-hero {
   padding: 80px 24px 60px;
-  border-bottom: 1px solid var(--red-dark);
+  border-bottom: 1px solid var(--blue-dark);
 }
 .site-hero-inner {
   max-width: 900px;
@@ -153,7 +153,7 @@ body {
   letter-spacing: 2px;
   line-height: 1.3;
   margin-bottom: 10px;
-  text-shadow: 0 0 20px rgba(192,0,26,0.4);
+  text-shadow: 0 0 20px rgba(0,86,179,0.4);
 }
 .site-hero-role {
   font-family: var(--fm);
@@ -165,9 +165,9 @@ body {
 /* ---- Sections ---- */
 .site-section {
   padding: 60px 24px;
-  border-bottom: 1px solid var(--red-dark);
+  border-bottom: 1px solid var(--blue-dark);
 }
-.site-section--alt { background: rgba(120,0,20,0.04); }
+.site-section--alt { background: rgba(0,43,92,0.04); }
 .site-section-inner { max-width: 900px; margin: 0 auto; }
 .site-section-title {
   font-family: var(--fp);
@@ -176,7 +176,7 @@ body {
   letter-spacing: 2px;
   margin-bottom: 32px;
 }
-.bracket { color: var(--red-light); text-shadow: 0 0 8px var(--red-light); }
+.bracket { color: var(--blue-light); text-shadow: 0 0 8px var(--blue-light); }
 .site-body-text {
   font-family: var(--fm);
   font-size: 15px;
@@ -197,12 +197,12 @@ body {
   text-decoration: none;
   padding: 14px 18px;
   background: #110003;
-  border: 1px solid var(--red-dark);
+  border: 1px solid var(--blue-dark);
   border-radius: 6px;
   max-width: 480px;
   transition: border-color 0.2s, box-shadow 0.2s, color 0.2s;
 }
-.site-contact-item:hover { border-color: var(--red); box-shadow: 0 0 16px rgba(192,0,26,0.25); color: #fff; }
+.site-contact-item:hover { border-color: var(--blue); box-shadow: 0 0 16px rgba(0,86,179,0.25); color: #fff; }
 .site-contact-icon { font-size: 20px; color: var(--gold); text-shadow: 0 0 8px var(--gold); width: 28px; flex-shrink: 0; }
 
 .site-project-list { display: flex; flex-direction: column; gap: 16px; }
@@ -216,12 +216,12 @@ body {
   text-decoration: none;
   padding: 14px 18px;
   background: #110003;
-  border: 1px solid var(--red-dark);
+  border: 1px solid var(--blue-dark);
   border-radius: 6px;
   max-width: 480px;
   transition: border-color 0.2s, box-shadow 0.2s, color 0.2s;
 }
-.site-project-item:hover { border-color: var(--red); box-shadow: 0 0 16px rgba(192,0,26,0.25); color: #fff; }
+.site-project-item:hover { border-color: var(--blue); box-shadow: 0 0 16px rgba(0,86,179,0.25); color: #fff; }
 /*Project Images*/
 .bizsite {
 	display: block;
@@ -261,7 +261,7 @@ body {
   font-size: 7px;
   color: var(--grey-dim);
   letter-spacing: 1px;
-  border-top: 1px solid var(--red-dark);
+  border-top: 1px solid var(--blue-dark);
 }
 
 /* ===================================================
@@ -284,7 +284,7 @@ body {
 
 /* ---- Body - Egg shape with Sapotama glow ring ---- */
 .dv-body {
-  --glow-color: var(--red-light);
+  --glow-color: var(--blue-light);
   background: linear-gradient(180deg, var(--egg-white) 0%, #e8e8e0 100%);
   border: 3px solid var(--egg-shadow);
   border-radius: 50% 50% 48% 48% / 60% 60% 40% 40%;
@@ -293,7 +293,7 @@ body {
     inset 0 2px 0 rgba(255,255,255,0.6),
     0 0 0 1px var(--egg-shadow),
     0 0 30px var(--glow-color),
-    0 0 60px rgba(192,0,26,0.2),
+    0 0 60px rgba(0,86,179,0.2),
     0 8px 32px rgba(0,0,0,0.3);
   position: relative;
   overflow: hidden;
@@ -316,8 +316,8 @@ body {
 @keyframes dvFloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-7px)} }
 /* Glow pulse animation */
 @keyframes glowPulse {
-  0%, 100% { box-shadow: inset 0 2px 0 rgba(255,255,255,0.6), 0 0 0 1px var(--egg-shadow), 0 0 30px var(--glow-color), 0 0 60px rgba(192,0,26,0.2), 0 8px 32px rgba(0,0,0,0.3); }
-  50% { box-shadow: inset 0 2px 0 rgba(255,255,255,0.6), 0 0 0 1px var(--egg-shadow), 0 0 45px var(--glow-color), 0 0 80px rgba(192,0,26,0.35), 0 8px 32px rgba(0,0,0,0.3); }
+  0%, 100% { box-shadow: inset 0 2px 0 rgba(255,255,255,0.6), 0 0 0 1px var(--egg-shadow), 0 0 30px var(--glow-color), 0 0 60px rgba(0,86,179,0.2), 0 8px 32px rgba(0,0,0,0.3); }
+  50% { box-shadow: inset 0 2px 0 rgba(255,255,255,0.6), 0 0 0 1px var(--egg-shadow), 0 0 45px var(--glow-color), 0 0 80px rgba(0,86,179,0.35), 0 8px 32px rgba(0,0,0,0.3); }
 }
 .dv-body { animation: dvFloat 4s ease-in-out infinite, glowPulse 3s ease-in-out infinite; }
 
@@ -337,7 +337,7 @@ body {
 }
 .dv-logo {
   font-size: 7px;
-  color: var(--red);
+  color: var(--blue);
   letter-spacing: 2px;
   text-shadow: none;
   font-weight: bold;
@@ -426,8 +426,8 @@ body {
 .dv-panel-heading {
   font-family: var(--fp);
   font-size: 8px;
-  color: var(--red-light);
-  text-shadow: 0 0 8px var(--red-light);
+  color: var(--blue-light);
+  text-shadow: 0 0 8px var(--blue-light);
   align-self: flex-start;
   margin-bottom: 12px;
 }
@@ -495,10 +495,10 @@ body {
 .dv-nav-tab:hover { background: rgba(0,0,0,0.1); color: #333; }
 .dv-nav-tab:active { transform: scale(0.95); }
 .dv-nav-tab.active {
-  background: var(--red);
+  background: var(--blue);
   color: #fff;
-  border-color: var(--red-dark);
-  box-shadow: 0 0 8px rgba(192,0,26,0.4);
+  border-color: var(--blue-dark);
+  box-shadow: 0 0 8px rgba(0,86,179,0.4);
   text-shadow: none;
 }
 
